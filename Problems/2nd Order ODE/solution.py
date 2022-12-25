@@ -1,6 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+Solution is obtained by applying Shooting Method to transform the
+second order ODE into two first order ODE’s. Runge-Kutta Order 4 for system of two ODE’s
+is used to obtain solutions for two first order ODE’s by guessing initial value for the second
+first order ODE.
+"""
+
+
 # f1 = dy/dt
 def f1( t, y, z ):
   return z
